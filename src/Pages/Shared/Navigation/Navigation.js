@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { Container, Nav, Navbar, Button, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.png'
 import './Navigation.css'
@@ -17,7 +17,16 @@ const Navigation = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link to="/home" as={Link} className="fw-bolder">Home</Nav.Link><Nav.Link to="/dashboard" as={Link} className="fw-bolder">Dashboard</Nav.Link>
+                            <Nav.Link to="/home" as={Link} className="fw-bolder">Home</Nav.Link>
+                            {
+                                user?.email &&
+                                <NavDropdown title="Dashboard" id="collasible-nav-dropdown">
+                                    <NavDropdown.Item as={Link} to="/pay">Pay</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/myOrders">My Orders</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/reviews">Reviews</NavDropdown.Item>
+                                </NavDropdown>
+
+                            }
                             {
                                 user.email ?
                                     <Button variant="light" onClick={logout}>Logout</Button>

@@ -6,7 +6,7 @@ const About = () => {
 
     return (
         <>
-            <div>
+            <div className="pt-5">
                 <Container className="mt-5">
                     <Row>
                         <Col md={12} sm={12} xs={12}>

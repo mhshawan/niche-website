@@ -4,11 +4,12 @@ import Footer from '../../Shared/Footer/Footer';
 import Navigation from '../../Shared/Navigation/Navigation';
 import register from '../../../images/login.jpg';
 import './Register.css'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
     const [registerData, setRegisterData] = useState({});
+    const history = useHistory();
     const { user, registerUser, isLoading, authError } = useAuth();
     const handleOnBlur =  e => {
             const field = e.target.name;
@@ -22,8 +23,9 @@ const Register = () => {
             alert('Your Password Did Not Match')
             return
         };
-        registerUser(registerData.email, registerData.password);
+        registerUser(registerData.email, registerData.password, registerData.name, history);
         e.preventDefault()
+        history.push('/home')
     }
     return (
         <>

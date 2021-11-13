@@ -1,0 +1,14 @@
+.headericon{
+    color:#CE8339;
+}
+
+.headerbtn{
+    background-color: #CE8339;
+    border: none;
+}
+
+
+/********* RESPONSIVE CSS **********/
+@media screen and (max-width:767px){
+    .header {display: none;}
+}

@@ -1,0 +1,28 @@
+.product-card {
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+   
+}
+
+.product-card:hover{
+    box-shadow: 2px 11px 13px -7px #162F62;
+}
+
+
+.product-card button {
+    text-decoration: none;
+    background-color: #CE8339;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px 25px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: .3s;
+    display: inline-block;
+    margin-top: 8px;
+}
+.card-description{
+    height: 120px;
+}

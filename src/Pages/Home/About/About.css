@@ -1,0 +1,87 @@
+.why-people-choose-us-section {
+    background-image: url('../../../images/fact-2-min.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    height: 1000px;
+    padding: 70px 0px;
+    margin-bottom: 50px;
+}
+
+
+.why-people-detail h2 {
+    color: #162f62;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 14px;
+}
+
+.why-people-detail p {
+    color: #162f62;
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+.achievement-inner {
+    line-height: 28px;
+}
+
+h2.achievement-one, 
+h2.achievement-two, 
+h2.achievement-three, 
+h2.achievement-four {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h2.achievement-one{
+    color:#CE8339;
+}
+h2.achievement-two{
+    color: #CE8339;
+}
+h2.achievement-three{
+    color: #CE8339;
+}
+h2.achievement-four{
+    color: #CE8339;
+}
+
+.director{
+    color: #CE8339;
+}
+
+.achievement-inner p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #162f62;
+}
+
+
+/********* RESPONSIVE CSS **********/
+@media screen and (max-width:1057px){
+    .why-choose-list-title h2{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .why-people-detail h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .why-people-choose-img img {
+        width: 100%;
+    }
+
+    .achievement-inner{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:575px){
+    .why-people-choose-img {
+        margin-bottom: 45px;
+    }
+}

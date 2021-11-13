@@ -1,0 +1,12 @@
+.banner{
+    background-image: url(../../../images/home-slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.bannertxt{
+    font-size: 72px;
+    font-weight: 900;
+}

@@ -48,7 +48,7 @@ const ManageProduct = () => {
                                         key={product._id}>
                                         <td>{product.productName}</td>
                                         <td>{product.price}</td>
-                                        <td ><button onClick={() => handleRemove(product._id)}>Delete</button></td>
+                                        <td ><button className="headerbtn text-white"  onClick={() => handleRemove(product._id)}>Delete</button></td>
 
                                     </tr>
                                 )

@@ -19,6 +19,7 @@ import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 import ManageAllOrders from './Pages/Dashboard/ManageAllOrders/ManageAllOrders';
 import ManageProduct from './Pages/Dashboard/ManageProduct/ManageProduct';
 import AddProduct from './Pages/Dashboard/AddProduct/AddProduct';
+import NotFound from './Pages/NotFound/NotFound';
 
 
 
@@ -66,6 +67,9 @@ function App() {
           <PrivateRoute path="/purchase/:productID">
             <Purchase />
           </PrivateRoute>
+          <Route path="*">
+              <NotFound></NotFound>
+            </Route>
         </Switch>
       </Router>
     </AuthProvider>

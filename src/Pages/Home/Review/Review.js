@@ -5,13 +5,13 @@ import ShowReview from './ShowReview/ShowReview';
 const Review = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://radiant-woodland-35702.herokuapp.com/reviews')
         .then(res=>res.json())
         .then(data => setReviews(data))
     },[])
     return (
         <div className="product-title">
-            <h2 className="text-center">Reviews:{reviews.length}</h2>
+            <h2 className="text-center mb-5">Reviews:{reviews.length}</h2>
             <Container className="mb-5">
                 <Row className="gy-5" >
                     {
@@ -25,8 +25,7 @@ const Review = () => {
                      )
                     }
                 </Row>
-            </Container>
-             
+            </Container>             
         </div>
     );
 };

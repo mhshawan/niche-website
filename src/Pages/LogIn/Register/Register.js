@@ -91,7 +91,7 @@ const Register = () => {
                     <Link to="/login">Already Register?Please Login.</Link>
 
                 </Col>    
-                <Col md={6} xs={12} sm={12} className="register">
+                <Col md={6} xs={12} sm={12} className="register text-center">
                    <img src={register} alt="" />
                 </Col>    
              </Row>

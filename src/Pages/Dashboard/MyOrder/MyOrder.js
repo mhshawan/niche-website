@@ -10,7 +10,7 @@ const MyOrder = () => {
     const {user} = useAuth();
     const {uid} = user;
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders/${uid}`)
+        fetch(`https://radiant-woodland-35702.herokuapp.com/orders/${uid}`)
         .then(res => res.json())
         .then(data => setOrders(data))
     },[uid]);
@@ -18,7 +18,7 @@ const MyOrder = () => {
         
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${key}`
+            const url = `https://radiant-woodland-35702.herokuapp.com/orders/${key}`
             fetch(url, {
                 method: 'DELETE'
             })

@@ -11,7 +11,7 @@ const GiveReview = () => {
     const onSubmit = (data) =>{
         data.name = user.displayName;
         console.log(data)
-        fetch(`http://localhost:5000/reviews`, {
+        fetch(`https://radiant-woodland-35702.herokuapp.com/reviews`, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',

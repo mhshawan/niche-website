@@ -76,7 +76,7 @@ const LogIn = () => {
                         <Link to="/register">New user?Please Register.</Link>
 
                     </Col>
-                    <Col md={6} xs={12} sm={12} className="login">
+                    <Col md={6} xs={12} sm={12} className="login text-center">
                         <img src={login} alt="" />
                     </Col>
                 </Row>

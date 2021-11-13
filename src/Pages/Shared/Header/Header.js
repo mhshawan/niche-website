@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationArrow, faPhone, faClock } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
@@ -13,13 +13,13 @@ const Header = () => {
             <Container>
                 <Row>
                     <Col xs={4} md={4}>
-                        <span className="headericon">{location}</span> <span>192 ORCHARD ST, OHIO.</span>
+                        <span className="headericon">{location}</span> <span className="fw-bolder">192 ORCHARD ST, OHIO.</span>
                     </Col>
                     <Col xs={4} md={4}>
-                        <span className="headericon">{phone}</span> <span>056 83 458 868</span>
+                        <span className="headericon">{phone}</span> <span className="fw-bolder">056 83 458 868</span>
                     </Col>
                     <Col xs={4} md={4}>
-                        <span className="headericon">{clock}</span> <span>MON-FRI: 8.00 - 17.00</span>
+                        <span className="headericon">{clock}</span> <span className="fw-bolder">MON-FRI: 8.00 - 17.00</span>
                     </Col>
                 </Row>
             </Container>

@@ -42,27 +42,27 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/pay">
+          <PrivateRoute path="/pay">
             <Pay />
-          </Route>
-          <Route path="/myOrders">
+          </PrivateRoute>
+          <PrivateRoute path="/myOrders">
             <MyOrder />
-          </Route>
-          <Route path="/reviews">
+          </PrivateRoute>
+          <PrivateRoute path="/reviews">
             <GiveReview />
-          </Route>
-          <Route path="/makeAdmin">
+          </PrivateRoute>
+          <PrivateRoute path="/makeAdmin">
           <MakeAdmin/>
-        </Route>
-        <Route path="/manageAllOrders">
+        </PrivateRoute>
+        <PrivateRoute path="/manageAllOrders">
           <ManageAllOrders/>
-        </Route>
-        <Route path="/manageProduct">
+        </PrivateRoute>
+        <PrivateRoute path="/manageProduct">
           <ManageProduct/>
-        </Route>
-        <Route path="/addProduct">
+        </PrivateRoute>
+        <PrivateRoute path="/addProduct">
           <AddProduct/>
-        </Route>
+        </PrivateRoute>
           <PrivateRoute path="/purchase/:productID">
             <Purchase />
           </PrivateRoute>

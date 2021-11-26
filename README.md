@@ -5,7 +5,7 @@
 
 - Live link of the project(https://car-website-5982d.web.app/)
 
-- code link here(https://github.com/programming-hero-web-course-4/niche-website-client-side-mhshawan)
+- code link here(https://github.com/mhshawan/niche-website)
 
 ## Available Scripts
 
